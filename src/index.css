@@ -12,8 +12,6 @@ code {
     monospace;
 }
 
-:root {
-  --main-color:rgb(183, 106, 255); 
-  --main-hover-color:rgb(227, 197, 255);
-  --secondary-color: #6c757d; 
+:root {  
+  --primary-color:#128c7e
 }
