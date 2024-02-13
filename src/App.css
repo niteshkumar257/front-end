@@ -18,7 +18,7 @@
     height: 85vh;
     display: flex;
     flex-direction: column;
-    border: 1px solid #ccc;
+    border: .25rem solid var(--primary-color);
     border-radius: 8px;
   }
   
@@ -71,10 +71,10 @@
   .message-box{
     width:fit-content;
     max-width: 70%;
-    padding: 0.2rem 0.5rem;
+    padding: 0.2rem 0.75rem;
     border-radius: 9px;
    
-    border: 0.3px solid lightgrey;
+    border: 0.3px solid var(--primary-color);
     
     justify-content: space-between;
   }
