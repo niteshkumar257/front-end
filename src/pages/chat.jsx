@@ -1,22 +1,11 @@
-
 import React, { useState, useEffect, useRef } from "react";
 import io from "socket.io-client";
-
+import Button from "../Components/button";
+import { getCurrentTime } from "../utils";
 
 const socket = io("https://backend-202e.onrender.com");
 
-const getCurrentTime = () => {
-  const currentDate = new Date();
-  const hours = currentDate.getHours();
-  const minutes = currentDate.getMinutes();
-  const ampm = hours >= 12 ? "pm" : "am";
-  const formattedHours = hours % 12 || 12;
-
-  const formattedMinutes = minutes < 10 ? `0${minutes}` : minutes;
-
-  return `${formattedHours}:${formattedMinutes} ${ampm}`;
-};
-function Chat() {
+const Chat = () => {
   const [messages, setMessages] = useState([]);
   const [inputText, setInputText] = useState("");
   const [userId, setUserId] = useState("");
@@ -88,13 +77,11 @@ function Chat() {
             onKeyDown={handleKeyPress}
             placeholder="Type a message..."
           />
-          <button className="send-button" onClick={handleMessageSend}>
-            Send
-          </button>
+          <Button buttonText={"Send"} onClick={handleMessageSend} />
         </div>
       </div>
     </div>
   );
-}
+};
 
 export default Chat;

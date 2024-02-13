@@ -75,6 +75,7 @@
     border-radius: 9px;
    
     border: 0.3px solid var(--primary-color);
+    background-color: var(--secondary-color);
     
     justify-content: space-between;
   }
@@ -108,6 +109,10 @@
     background-color:var(--primary-color);
     color: #fff;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: .5rem;
   }
   
   .send-button:hover {
@@ -115,17 +120,6 @@
   }
 
   /* home page styling */
-  .btn-container{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    column-gap: 2rem;
-    height: 4rem;
-    width:18rem;
-    font-size: 2rem;
-
-    
-  }
   .home-container{
     display: flex;
     justify-content: center;
