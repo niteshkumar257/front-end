@@ -3,7 +3,7 @@ import React, { useState, useEffect, useRef } from "react";
 import io from "socket.io-client";
 import "./App.css";
 
-const socket = io("http://localhost:8080");
+const socket = io("https://backend-202e.onrender.com");
 
 const getCurrentTime = () => {
   const currentDate = new Date();
